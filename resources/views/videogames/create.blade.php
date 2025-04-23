@@ -6,56 +6,64 @@
     <title>Criar Videogame</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
             padding: 40px;
-            background-color: #f9f9f9;
         }
 
         h1 {
+            color: #333;
             margin-bottom: 30px;
         }
 
         form {
             background-color: #fff;
             padding: 25px;
-            border-radius: 8px;
-            max-width: 400px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 450px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         label {
             display: block;
             margin-top: 15px;
-            font-weight: bold;
+            font-weight: 600;
+            color: #333;
         }
 
         input {
             width: 100%;
             padding: 10px;
-            margin-top: 5px;
+            margin-top: 6px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-size: 15px;
         }
 
         button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-size: 15px;
             cursor: pointer;
+            transition: background-color 0.2s ease;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #0069d9;
         }
 
         a {
-            display: inline-block;
+            display: block;
             margin-top: 20px;
+            text-align: center;
             text-decoration: none;
-            color: #333;
+            color: #555;
+            font-size: 14px;
         }
 
         a:hover {
@@ -68,6 +76,7 @@
 
     <form action="{{ route('videogames.store') }}" method="POST">
         @csrf
+
         <label for="name">Nome:</label>
         <input type="text" name="name" id="name" required>
 
@@ -77,9 +86,9 @@
         <label for="release_year">Ano de Lançamento:</label>
         <input type="number" name="release_year" id="release_year" required>
 
-        <button type="submit">Salvar</button>
+        <button type="submit">Salvar Videogame</button>
     </form>
 
-    <a href="{{ route('videogames.index') }}">← Voltar à lista</a>
+    <a href="{{ route('videogames.index') }}">← Voltar à lista de videogames</a>
 </body>
 </html>
