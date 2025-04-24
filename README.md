@@ -1,6 +1,6 @@
 # Desenvolvido por: 
 Guilherme Guimarães Szumski\
-Lucas Felipe Padilha
+Lucas Eduardo Padilha
 ---
 A aplicação é um CRUD de videogames./
 Segue o link do vídeo mostrando seu funcionamento: https://youtu.be/15c-I1jFY3A
