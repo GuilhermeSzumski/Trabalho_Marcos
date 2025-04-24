@@ -1,7 +1,9 @@
 # Desenvolvido por: 
 Guilherme Guimarães Szumski\
 Lucas Felipe Padilha
-
+---
+A aplicação é um CRUD de videogames./
+Segue o link do vídeo mostrando seu funcionamento: https://youtu.be/15c-I1jFY3A
 ## Para Rodar o Projeto
 
 1. **Configure o .env**
